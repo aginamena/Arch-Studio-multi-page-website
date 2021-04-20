@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+  <!-- bootstrap links -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- font awesome styles -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href = "contact.css" rel = "stylesheet">
+  <title>Frontend Mentor | Arch Studio Website Challenge</title>
+</head>
+<body class = "container">
+
+  <nav class="navbar navbar-expand-sm navbar-light container">
+    <img src = "assets/logo.svg" class = "navbar-brand">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+        <a class="nav-item nav-link" href="about.html">About Us</a>
+      </div>
+    </div>
+  </nav>
+
+  <section id = "section-one">
+    <img src = "assets/contact/desktop/image-hero.jpg" id = "image">
+    <div id = "section-one-head">
+      <div class = "section-one-name">Tell us about your project</div>
+      <div class = "section-one-text">We’d love to hear more about your project. Please, leave a message below or give
+      us a call. We have two offices, one in Texas and one in Tennessee. If you find
+      yourself nearby, come say hello!</div>
+      <div id = "contact">Contact</div>
+    </div>
+  </section>
+
+  <section id = "section-two">
+    <div id = "section-two-heading">Contact Details</div>
+
+    <div class = "contact-details">
+      <div class = "office">Main Office</div>
+      <div class = "mail">Mail:	&nbsp; archone@mail.com</div>
+      <div>Address: &nbsp; 1892 Chenoweth Drive TN</div>
+      <div class = "phone">Phone: &nbsp; 123-456-3451</div>
+
+      <a href = "#mapid" class = "view-map styling" id = "location-one">
+        View on Map &nbsp;
+        <img src =  "assets/icons/icon-arrow.svg">
+      </a>
+    </div>
+
+    <div class = "contact-details">
+      <div class = "office">Office II</div>
+      <div class = "mail">Mail: &nbsp; archtwo@mail.com</div>
+      <div>Address: &nbsp; 3399 Wines Lane TX</div>
+      <div class = "phone">Phone: &nbsp; 832-123-4321</div>
+
+      <a href = "#mapid" class = "view-map styling" id = "location-two">
+        View on Map &nbsp;
+        <img src =  "assets/icons/icon-arrow.svg">
+      </a>
+    </div>
+  </section>
+
+  <!-- creating map -->
+   <div id="mapid"></div>
+
+  <section id = "section-three">
+    <div id = "section-three-heading">Connect with us</div>
+
+    <!-- after the user has completed the form, we take the user to the thank you page -->
+    <form id = "form" action = "thankYou.html">
+      <input type = "text" placeholder="Name" id = "name" required>
+      <input type = "email" placeholder="Email" id = "email" required>
+      <input type = "text" placeholder="Message" id = "message" required>
+      <button type = "submit" id = "submit">Submit</button>
+    </form>
+  </section>
+
+  <section id = "section-four">
+    <img src = "assets/logo.svg" class = "navbar-brand">
+    <a class="nav-item nav-link" href="index.html">Home</a>
+    <a class="nav-item nav-link" href="about.html">About Us</a>
+    <br>
+    <a href = "portfolio.html"><div class = "see_portfolio">
+      See Our Portfolio
+      <i class="fas fa-arrow-alt-circle-right font-awesome-icon"></i>
+    </div></a>
+  </section>
+
+</body>
+  <script src = "script/contact.js"></script>
+</html>

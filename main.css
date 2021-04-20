@@ -1,0 +1,293 @@
+/* overriding default browser styling */
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+/* navigation styling */
+.navbar{
+  margin-top:10px;
+  margin-bottom: 30px;
+}
+#navbarNavAltMarkup{
+  justify-content: space-around;
+}
+.nav-link{
+  color:black;
+}
+.nav-link:hover{
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  color:black;
+}
+
+
+/* section one styling */
+.carousel-inner{
+  position: relative;
+}
+.heading-features{
+  position: absolute;
+  top: 50%;
+  color: white;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#heading{
+  position: relative;
+}
+.features-name{
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1;
+  font-size : calc(16px + (80 - 16) * (100vw - 280px) / (1440 - 280));
+}
+.features-text{
+  font-weight: 100;
+  width: 350px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.features-img{
+  filter:brightness(0.5);
+}
+.see_portfolio, .see_portfolio1{
+  padding: 15px;
+  background: black;
+  width: 230px;
+  color:white;
+  cursor: pointer;
+}
+.font-awesome-icon{
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.link-number{
+  width:50px;
+  height:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.link-number:hover{
+  background: black;
+  color:white;
+}
+#first_link{
+  background:black;
+  color:white;
+}
+
+/* section two styling */
+#section-two{
+  margin-top:300px;
+  position: relative;
+  height: 430px;
+}
+.welcome-text{
+  width:400px;
+}
+#wel-pag2{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+#welcome-heading{
+  font-weight: bold;
+  width: 400px;
+  line-height: 1;
+  margin-bottom: 30px;
+  font-size : calc(16px + (50 - 16) * (100vw - 280px) / (1440 - 280));
+}
+#welcome-img{
+  position: absolute;
+  right:0;
+  bottom:0;
+}
+#welcome-con{
+  position: absolute;
+  left: 35%;
+  transform: translateX(-50%);
+}
+#welcome-display{
+  position: absolute;
+  top:-300px;
+  color: lightgray;
+  /* font-size: 200px; */
+  font-size: 15vw;
+  font-weight: bold;
+}
+
+/* section three styling */
+#section-three{
+  margin-top:200px;
+  position: relative;
+}
+#section-three-desc{
+  position: absolute;
+  top: 50%;
+  color: white;
+  left: 33%;
+  transform: translate(-50%, -50%);
+}
+#section-three-heading{
+  width: 350px;
+  line-height: 1;
+  margin-bottom: 30px;
+  font-size : calc(16px + (60 - 16) * (100vw - 280px) / (1440 - 280));
+}
+#about-us-one, #about-us-two{
+  width:150px;
+  color:white;
+}
+
+/* section four styling */
+#section-four{
+  margin-top:200px;
+  position: relative;
+}
+#section-four-heading{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:50px;
+  display: grid;
+}
+#featured{
+  font-weight: bold;
+  font-size: 40px;
+}
+#section-four-features{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+#num1, #num2, #num3{
+  position: relative;
+  cursor: pointer;
+}
+#num1:hover, #num3:hover, #num2:hover{
+  border:2px solid black;
+}
+.features-item{
+  position: absolute;
+  bottom: 120px;
+  left: 30px;
+  color:white;
+}
+.section-four-img{
+  filter:brightness(0.7);
+}
+.feature-item-name{
+  font-weight: bold;
+}
+.feature-item-desc{
+  font-weight: 100;
+}
+.feature-number{
+  position: absolute;
+  top: -50px;
+  right: 0;
+  color: lightgray;
+  font-size: 200px;
+  font-weight: bold;
+}
+
+/* section five styling */
+#section-five{
+  display: flex;
+  justify-content: space-between;
+  margin-top:200px;
+  background: lightgray;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+@media(max-width:995px){
+  #welcome-img{
+    display: none;
+  }
+  #welcome-display{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #welcome-con{
+    left:50%;
+  }
+
+}
+@media(max-width:768px){
+  #section-three-img, .section-four-img, #welcome-heading, .welcome-text,
+  .features-text, #section-three-heading{
+    width:100%;
+  }
+  #section-three-desc{
+    width:100%;
+    text-align: center;
+  }
+
+  #section-three-desc{
+    left:50%;
+  }
+  #section-four{
+    text-align: center;
+  }
+  #section-four-heading{
+    display: block;
+  }
+  #about-us-two, #about-us-one{
+    position: absolute;
+    bottom: -110px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #welcome-con{
+    left:0;
+    transform: none;
+    width: 100%;
+    text-align: center;
+  }
+  .see_portfolio1{
+    position: absolute;
+    left: 50;
+    left: 50%;
+    /* transform: translate3d(10px, 10px, 10px); */
+    transform: translateX(-50%);
+  }
+  .heading-features{
+    width: 100%;
+    text-align: center;
+  }
+  #section-four-features{
+    justify-content: center;
+  }
+  #middle-img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+}
+@media(max-width:600px){
+  #section-five{
+    display: block;
+    text-align: center;
+    position: relative;
+    height: 240px;
+  }
+  .see_portfolio{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #section-four-features{
+    display: block;
+
+  }
+
+}

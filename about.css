@@ -1,0 +1,204 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+/* navigation styling */
+#navbarNavAltMarkup{
+  justify-content: space-around;
+}
+.nav-link{
+  color:black;
+}
+.nav-link:hover{
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  color:black;
+}
+.navbar{
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+/* section-one styling */
+#section-one{
+  position: relative;
+}
+.section-one-name{
+  font-size: 50px;
+  width: 400px;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+.section-one-text{
+  width:400px;
+}
+#section-one-head{
+  position: absolute;
+  right: 0;
+  padding: 90px 90px 0 90px;
+  bottom: 0;
+  background: white;
+}
+#about{
+  position: absolute;
+  font-size: 200px;
+  font-weight: bold;
+  color:lightgray;
+  top:-300px;
+  right:0;
+}
+
+/* section two styling */
+#section-two{
+  position: relative;
+  margin-top:300px;
+}
+#second-pag{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#heritage-img{
+  position: absolute;
+  right:0;
+  bottom: 0;
+}
+
+/* section three styling */
+#section-three{
+  margin-top:300px;
+  position: relative;
+  height: 809px;
+}
+#list-of-leaders{
+  position: absolute;
+  right:0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 50px;
+  grid-column-gap: 30px;
+}
+#section-three-heading{
+  position: absolute;
+  font-size: 50px;
+}
+.name{
+  font-weight: bold;
+  margin-top:10px;
+}
+.leaders{
+  cursor: pointer;
+}
+
+/* section four styling */
+#section-four{
+  display: flex;
+  justify-content: space-between;
+  margin-top:200px;
+  background: lightgray;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+
+}
+.see_portfolio{
+  padding: 15px;
+  background: black;
+  width: 230px;
+  color:white;
+  cursor: pointer;
+}
+.font-awesome-icon{
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+/* styling for mobile phones */
+@media(max-width:1200px){
+  #heritage-img{
+    display: none;
+  }
+  #section-two{
+    position: relative;
+    height: 300px;
+    margin-top:150px;
+  }
+  #section-two-pag{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+  }
+  #team-prof{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #team-prof-text{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+  #section-one-head{
+    position: relative;
+    height: 340px;
+    padding-left:0;
+    padding-right:0;
+  }
+  #section-three{
+    text-align: center;
+    margin-top:250px;
+    height: auto;
+  }
+  #section-three-heading{
+    position: static;
+    margin-bottom: 60px;
+  }
+  #list-of-leaders{
+    position: static;
+    display: block;
+  }
+
+  #num2, #num3, #num4{
+    margin-top:50px;
+  }
+
+}
+@media(max-width:768px){
+  #about, #image{
+    display: none;
+  }
+  #team-prof, #team-prof-text{
+    position: static;
+    transform: none;
+  }
+  #section-one, #section-two{
+    text-align: center;
+  }
+  #section-two-pag{
+    position: static;
+    transform: none;
+  }
+  .section-one-name, .section-one-text
+  ,#maria-img, #jake-img, #jackson-img, #thomp-img{
+    width:100%;
+  }
+}
+@media(max-width:600px){
+  #section-four{
+    display: block;
+    text-align: center;
+    position: relative;
+    height:240px;
+  }
+
+  .see_portfolio{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

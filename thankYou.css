@@ -1,0 +1,49 @@
+/* overriding default browser styling */
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+body{
+  height: 100vh;
+  position: relative;
+}
+
+/* section one styling */
+#section-one{
+  display: flex;
+  justify-content: space-between;
+  background: lightgray;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+  width:100%;
+}
+.see_portfolio{
+  padding: 15px;
+  background: black;
+  width: 230px;
+  color:white;
+  cursor: pointer;
+}
+.nav-link{
+  color:black;
+}
+.nav-link:hover{
+  font-weight: bold;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+  color:black;
+}
+
+#thankYou{
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: tran;
+  transform: translate(-50%, -50%);
+}
